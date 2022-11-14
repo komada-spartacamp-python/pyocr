@@ -89,9 +89,9 @@ def read():
 
 
 def text():
-    datetime_format = datetime.datetime(2017, 11, 12, 9, 55, 28)
-    c = datetime_format.strftime("%Y/%m/%d")
-    print(f"{c}の摂取カロリーは{read()}kcalです。")
+    now = datetime.datetime.now()
+    d = now.date().strftime('%Y/%m/%d')
+    print(f"{d}の摂取カロリーは{read()}kcalです。")
 
 
 # def read():
